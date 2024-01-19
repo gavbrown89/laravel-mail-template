@@ -19,8 +19,8 @@
                             @foreach ($templates as $i)
                                 <tr>
                                     <td class="align-middle">{{ ucfirst($i->name) }}</td>
-                                    <td class="align-middle"><a href="{{ route('home.template', ['id' => $i->id]) }}" class="btn btn-primary">Edit</button></td>
-                                    <td class="align-middle"><a href="{{ route('home.options', ['id' => $i->id]) }}" class="btn btn-secondary">Options</button></td>
+                                    <td class="align-middle"><a href="{{ route('home.template', ['id' => $i->id]) }}" class="btn btn-primary">Edit</a></td>
+                                    <td class="align-middle"><a href="{{ route('home.options', ['id' => $i->id]) }}" class="btn btn-secondary">Options</a></td>
                                 </tr>
                             @endforeach
                         </tbody>
